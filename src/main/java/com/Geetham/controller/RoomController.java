@@ -6,7 +6,7 @@ import com.Geetham.model.BookedRoom;
 import com.Geetham.model.Room;
 import com.Geetham.response.BookingResponse;
 import com.Geetham.response.RoomResponse;
-import com.Geetham.service.BookingService;
+import com.Geetham.service.IBookingService;
 import com.Geetham.service.IRoomService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.codec.binary.Base64;
@@ -30,7 +30,7 @@ import java.util.Optional;
 @RequestMapping("/rooms")
 public class RoomController {
     private final IRoomService roomService;
-    private final BookingService bookingService;
+    private final IBookingService bookingService;
 
     @PostMapping("/add/new-room")
     public ResponseEntity<RoomResponse> addNewRoom(

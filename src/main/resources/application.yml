@@ -4,8 +4,8 @@ server:
 spring:
   application:
     name: GeethamApplication
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
   datasource:
     url: jdbc:mysql://localhost:3306/geetham_db?useSSL=false&allowPublicKeyRetrieval=true
     username: root

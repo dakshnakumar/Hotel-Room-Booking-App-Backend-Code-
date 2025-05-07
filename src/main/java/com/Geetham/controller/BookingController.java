@@ -1,5 +1,4 @@
 package com.Geetham.controller;
-
 import com.Geetham.exception.InvalidBookingRequestException;
 import com.Geetham.exception.ResourceNotFoundException;
 import com.Geetham.model.BookedRoom;
